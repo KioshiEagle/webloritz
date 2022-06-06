@@ -1,0 +1,184 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    border-bottom: 2px solid gold;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+.header{
+    font-size: 20px;
+    text-align: left;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    margin-top: 0;
+    font-family: "Comic Sans MS";
+    height: 68px;
+}
+
+.headername{
+    float: left;
+    width: 10%;
+}
+.headername a{
+    float: left;
+}
+
+.headermenu{
+    float: right;
+    width: 90%;
+}
+
+.headermenu a{
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.header a:hover{
+    text-decoration: underline;
+}
+
+.blog{
+    float: left;
+    width: calc(100% - 375px);
+}
+
+.titreactu {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.article {
+    overflow: hidden;
+}
+
+.titrearticle a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+.imagearticle {
+    float: left;
+    width: 308px;
+    margin: 20px;
+}
+
+.imagearticle img {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.datearticle {
+    font-weight: 300px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.titrearticle {
+    font-size: 2.25rem;
+}
+
+.lycee {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+
+.twitter{
+    text-align: center;
+    float: right;
+    width: 375px;
+}
+.titretwitter{
+    font-family: "Comic Sans MS";
+}
+.footer{
+    clear: both;
+    padding-left: 100px;
+    padding-top: 20px;
+    background: #062e3d!important;
+}
+
+.footergauche {
+    float: left;
+    width: 100%;
+    background: #062e3d!important;
+}
